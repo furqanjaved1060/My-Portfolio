@@ -1,0 +1,10 @@
+.wrapper {
+    width: 111rem;
+    margin: auto;
+}
+
+@media screen and (width < 830px) {
+    .wrapper {
+        width: 90%;
+    }
+}

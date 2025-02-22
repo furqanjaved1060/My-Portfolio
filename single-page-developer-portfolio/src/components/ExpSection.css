@@ -1,0 +1,36 @@
+.exp-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid hsl(0, 0%, 100%);
+    padding: 7.2rem 0 3.6rem;
+    gap: 5.8rem 3.75rem;
+}
+
+.all-items-exp-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+
+@media screen and (width < 830px) {
+  .exp-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width < 435px) {
+    .exp-section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .all-items-exp-section {
+        align-items: center;
+    }
+
+    .all-items-exp-section p {
+      font-size: 3rem;
+    }
+  }

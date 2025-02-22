@@ -1,0 +1,151 @@
+.hero-section {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.hero-content {
+    padding: 19.8rem 0 12.5rem;
+    width: 64%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content > h1 > a {
+    font-size: 8.8rem;
+    font-weight: 700;
+    letter-spacing: -0.25rem;
+    line-height: 1;
+    border-bottom: 4px solid hsl(153,71%,59%);
+    text-transform: none;
+}
+
+.hero-content p {
+    margin-bottom: 6.5rem;
+    padding-right: 26rem;
+}
+
+.hero-content > a {
+    padding-bottom: 1.3rem;
+}
+
+.hero-picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 40%;
+    z-index: 0;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (width < 830px) {
+    .hero-content {
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+    }
+
+    .hero-content p {
+        margin-bottom: 2.5rem;
+        padding-right: 14rem;
+    }
+}
+
+@media screen and (width < 684px) {
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero-content p {
+        padding-right: 5rem;
+    }
+
+    .hero-picture {
+        max-width: 45%;
+    }
+}
+
+@media screen and (width < 590px) {
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-content p {
+        padding-right: 16rem;
+    }
+
+    .hero-picture {
+        max-width: 40%;
+    }
+}
+
+@media screen and (width < 565px) {
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero-content p {
+        padding-right: 5rem;
+    }
+
+    .hero-picture {
+        max-width: 45%;
+    }
+}
+
+@media screen and (width < 490px) {
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-content p {
+        padding-right: 16rem;
+    }
+
+    .hero-picture {
+        max-width: 40%;
+    }
+}
+
+@media screen and (width < 475px) {
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero-content p {
+        padding-right: 5rem;
+    }
+
+    .hero-picture {
+        max-width: 45%;
+    }
+}
+
+@media screen and (width < 435px) {
+
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content p {
+        padding-right: 0;
+    }
+
+    .hero-picture {
+        position: static;
+        max-width: 65%;
+    }
+}
+
